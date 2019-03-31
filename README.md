@@ -62,11 +62,12 @@ Before start working on a specific task, please do the following preparation on 
      curl http://web.eecs.umich.edu/\~jjcorso/bigshare/A2D_main_1_0.tar.bz --output A2D_main_1_0.tar.bz
      ```
 
-  2. Decompress the tar ball and rename the folder
+  2. Decompress the tar ball, rename the folder and remove tar ball.
 
      ```bash
      tar xvf A2D_main_1_0.tar.bz
      mv Release A2D
+     rm A2D_main_1_0.tar.bz
      ```
 
   3. move the data split to A2D
@@ -77,6 +78,8 @@ Before start working on a specific task, please do the following preparation on 
      ```
 
   4. Extract frames from videos
+
+     (Tip: Since it takes a long time to extract frames from video, you can execute the command in  `screen` or `tmux`, in case the disconnection happens.)
 
      ```bash
      python extract_frames.py
