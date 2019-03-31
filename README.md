@@ -17,10 +17,10 @@ Before start working on a specific task, please do the following preparation on 
   git clone --recursive https://github.com/rochesterxugroup/csc249_final_proj.git
   ```
 
-  If there is any updates of the repository, please use the following command to pull:
+  If there is any updates of the repository, please use the following command to update:
 
   ```bash
-  git pull --recurse-submodules
+  git submodule update --remote --merge
   ```
 
   cd to the cloned repo:
