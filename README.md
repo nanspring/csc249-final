@@ -7,7 +7,7 @@ In this final project, you are going to build deep learning models for two tasks
 
 ## Preparation
 
-Before start working on a specific task, please do the following preparation on your Google cloud.
+Before start working on a specific task, please do the following preparation on your Google Cloud.
 
 - **Clone the repository**
 
@@ -69,7 +69,14 @@ Before start working on a specific task, please do the following preparation on 
      mv Release A2D
      ```
 
-  3. Extract frames from videos
+  3. move the data split to A2D
+
+     ```bash
+     mkdir A2D/list
+     cp -r data_split/* A2D/list/
+     ```
+
+  4. Extract frames from videos
 
      ```bash
      python extract_frames.py
