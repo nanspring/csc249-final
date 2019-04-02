@@ -77,3 +77,9 @@ Before start working on a specific task, please do the following preparation on 
      ```bash
      python extract_frames.py
      ```
+
+
+
+## Submission
+
+Please read `submission/README.md` for more details of submission format.
