@@ -53,6 +53,12 @@ Before start working on a specific task, please do the following preparation on 
      conda install torchvision
      ```
 
+  5. Install the ffmpeg via
+
+     ```bash
+     sudo apt install ffmpeg
+     ```
+
 - **Download A2D dataset**
 
   Please make sure you are at the `csc249_final_proj` directory.
