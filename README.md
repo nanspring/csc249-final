@@ -5,7 +5,7 @@ In this final project, you are going to build deep learning models for two tasks
 
 
 
-**Update 1 [April 3 1:28pm] :** The dataset has been updated. Please download the latest dataset (the same link given below) and extract the frames from videos again. You don't have to train your model again if you train it on the older dataset.
+**Update 1 [April 3 1:30pm] :** The dataset has been updated. If you have already download the older one, please remove it by `rm -rf A2D`. Please download the latest dataset (the same link given below) and extract the frames from videos again. You don't have to train your model again if you train it on the older dataset.
 
 
 
