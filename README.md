@@ -5,6 +5,10 @@ In this final project, you are going to build deep learning models for two tasks
 
 
 
+**Update 1 [April 3 1:30pm] :** The dataset has been updated. If you have already download the older one, please remove it by `rm -rf A2D`. Please download the latest dataset (the same link given below) and extract the frames from videos again. You don't have to train your model again if you train it on the older dataset.
+
+
+
 ## Preparation
 
 Before start working on a specific task, please do the following preparation on your Google Cloud.
@@ -53,6 +57,12 @@ Before start working on a specific task, please do the following preparation on 
      conda install torchvision
      ```
 
+  5. Install the ffmpeg via
+
+     ```bash
+     sudo apt install ffmpeg
+     ```
+
 - **Download A2D dataset**
 
   Please make sure you are at the `csc249_final_proj` directory.
@@ -60,25 +70,17 @@ Before start working on a specific task, please do the following preparation on 
   1. Download the A2D dataset
 
      ```bash
-     curl http://web.eecs.umich.edu/\~jjcorso/bigshare/A2D_main_1_0.tar.bz --output A2D_main_1_0.tar.bz
+     curl http://www.cs.rochester.edu/~cxu22/t/249S19/A2D.tar.gz --output A2D.tar.gz
      ```
 
-  2. Decompress the tar ball, rename the folder and remove tar ball.
+  2. Decompress the tar ball and remove tar ball.
 
      ```bash
-     tar xvf A2D_main_1_0.tar.bz
-     mv Release A2D
-     rm A2D_main_1_0.tar.bz
+     tar xvzf A2D.tar.gz
+     rm A2D.tar.gz
      ```
 
-  3. move the data split to A2D
-
-     ```bash
-     mkdir A2D/list
-     cp -r data_split/* A2D/list/
-     ```
-
-  4. Extract frames from videos
+  3. Extract frames from videos
 
      (Tip: Since it takes a long time to extract frames from video, you can execute the command in  `screen` or `tmux`, in case the disconnection happens.)
 
@@ -86,3 +88,8 @@ Before start working on a specific task, please do the following preparation on 
      python extract_frames.py
      ```
 
+
+
+## Submission
+
+Please read `submission/README.md` for more details of submission format.
